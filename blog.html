@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Punto y Afecto</title>
+
+<!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- CSS personalizado -->
+<link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+
+
+<header class="Header">
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
+            <span class="fw-bold text-primary">Punto y</span> Afecto
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiensoy.html">¿Quién soy?</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+            <!-- Botón CTA -->
+            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO BLOG -->
+<div class="hero-blog">
+    <div class="contenido-hero-blog text-center">
+        <h1>Blog</h1>
+        <p>Consejos, tutoriales y tendencias sobre nuestras lanas y tejidos</p>
+    </div>
+
+    <!-- ONDA SVG igual que "¿Quién soy?" -->
+    <div class="wave"> <!-- Cambié la clase a wave igual que "¿Quién soy?" -->
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-18.98,88.31 C210.21,248.19 334.36,-125.81 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style="stroke: none; fill: rgba(220, 226, 231, 0.7);">
+            </path>
+        </svg>
+    </div>
+</div>
+
+<!-- =======================
+     BLOG POSTS
+======================= -->
+<section class="blog-container container my-5">
+    <div class="row">
+
+        <!-- Post 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/c.jpg" class="card-img-top" alt="Post 1">
+                <div class="card-body">
+                    <h5 class="card-title">Cómo elegir la mejor lana para tus proyectos</h5>
+                    <p class="card-text">Aprende a seleccionar la lana adecuada según el tipo de tejido, suavidad y durabilidad.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/d.jpg" class="card-img-top" alt="Post 2">
+                <div class="card-body">
+                    <h5 class="card-title">5 trucos para mantener tus tejidos perfectos</h5>
+                    <p class="card-text">Consejos de cuidado y almacenamiento para que tus creaciones duren mucho más tiempo.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/f.webp" class="card-img-top" alt="Post 3">
+                <div class="card-body">
+                    <h5 class="card-title">Tendencias de colores para la temporada</h5>
+                    <p class="card-text">Descubre los colores que están de moda este año y cómo combinarlos en tus proyectos.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+    <!-- Post 4-->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/o.webp" class="card-img-top" alt="Post 1">
+                <div class="card-body">
+                    <h5 class="card-title">Como elegir la calidad</h5>
+                    <p class="card-text">Calidad en el Origen Transformamos el cuidado de nuestro ganado en 
+                        vellones seleccionados con la máxima finura y suavidad.  
+                    </p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 5-->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/b.webp" class="card-img-top" alt="Post 2">
+                <div class="card-body">
+                    <h5 class="card-title">La excelencia de un proyecto</h5>
+                    <p class="card-text">Tradición y Excelencia: Producimos fibras de lana de 
+                        alta calidad bajo estándares de bienestar animal respeto por la tierra.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post 6-->
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100">
+                <img src="indexima/e.jpg" class="card-img-top" alt="Post 3">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        El compromiso en cada pieza
+                    </h5>
+                    <p class="card-text">Compromiso Sostenible: Ofrecemos una materia prima noble y natural que conecta 
+                        la herencia del campo con la industria textil moderna.</p>
+                    <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =======================
+     FOOTER
+======================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h3>Punto y Afecto</h3>
+                <p>Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.</p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Servicios</h5>
+                <ul>
+                    <li>Venta de lanas</li>
+                    <li>Tejidos personalizados</li>
+                    <li>Artesanías</li>
+                    <li>Envíos a todo el país</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Contáctanos</h5>
+                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
+                <p><i class="bi bi-facebook"></i> Facebook</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+                <p><i class="bi bi-tiktok"></i> TikTok</p>
+            </div>
+
+        </div>
+        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+        <p class="text-center mb-0">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <!-- Scripts -->
+          <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

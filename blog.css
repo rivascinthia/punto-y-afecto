@@ -1,0 +1,173 @@
+/* =======================
+   IMPORTACIÓN DE FUENTE
+======================= */
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+/* =======================
+   ESTILOS GENERALES
+======================= */
+* {
+    font-family: 'Poppins', sans-serif; /* Fuente global */
+    box-sizing: border-box;              /* Margen y padding incluidos en ancho */
+    margin: 0;                            /* Elimina márgenes por defecto */
+    padding: 0;                           /* Elimina padding por defecto */
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar.bg-gradient {
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+}
+
+.navbar .nav-link {
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.navbar .btn-primary {
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+/* HERO BLOG */
+.hero-blog {
+    position: relative;
+   background: url("indexima/8.jpg") no-repeat center center; /* Imagen de fondo centrada */
+    background-size: cover;
+    height: 50vh;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contenido-hero-blog h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.contenido-hero-blog p {
+    font-size: 1.2rem;
+}
+
+/* =======================
+   ONDA EXACTA DE "QUIÉN SOY"
+======================= */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    height: 150px; /* misma altura que "Quién soy" */
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.wave path {
+    fill: rgba(120, 157, 187, 0.7); /* mismo color de la onda */
+}
+
+/* =======================
+   BLOG CARDS
+======================= */
+.blog-container .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+    background: linear-gradient(135deg, #367997, #336679);
+    color: white;
+    padding: 60px 0;
+    font-size: 14px;
+}
+
+.footer h3, .footer h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+    .hero-blog h1 {
+        font-size: 2rem;
+    }
+
+    .hero-blog p {
+        font-size: 1rem;
+    }
+
+    .blog-container .card-body h5 {
+        font-size: 1rem;
+    }
+
+    .blog-container .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-blog h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-blog p {
+        font-size: 0.85rem;
+    }
+
+    .blog-container .card-body h5 {
+        font-size: 0.9rem;
+    }
+
+    .blog-container .card-body p {
+        font-size: 0.8rem;
+    }
+}

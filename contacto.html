@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="contactos.css">
+
+</head>
+<body>
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
+            <span class="fw-bold text-primary">Punto y</span> Afecto
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiensoy.html">¿Quién soy?</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+            <!-- Botón CTA -->
+            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+    <div class="contenido-hero">
+        <br>   <br>   <br><br><br>
+        <h3>La mejor</h3>
+        <h5>Comunicacion</h5>
+        <a href="#contacto" class="btn btn-primary">Contactame</a>
+    </div>
+
+       <!-- ONDA SVG igual que "¿Quién soy?" -->
+    <div class="wave"> <!-- Cambié la clase a wave igual que "¿Quién soy?" -->
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-18.98,88.31 C210.21,248.19 334.36,-125.81 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style="stroke: none; fill: rgba(120, 157, 187, 0.7);">
+            </path>
+        </svg>
+    </div>
+</div>
+
+<section class="contacto-contenedor">
+  <div class="container">
+    <h2 class="text-center mb-5">Contactanos</h2>
+    <div class="row align-items-start">
+
+      <!-- FORMULARIO -->
+      <div class="col-lg-6 mb-4">
+        <div class="contacto-card">
+          <h3>Envíanos un mensaje</h3>
+          <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu email" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- MAPA -->
+      <div class="col-lg-6 mb-4">
+        <div class="mapa-card">
+          <h3>Nuestra Ubicación</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509204!2d144.9537353153158!3d-37.81627997975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0bd7d7%3A0x5045675218ceed30!2sMelbourne%20Convention%20and%20Exhibition%20Centre!5e0!3m2!1ses!2sau!4v1619494238386!5m2!1ses!2sau"
+                  allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+
+<section class="Galeria">
+<div class="container">
+<h1 class="text-center mb-4"></h1>
+</div>
+
+<div class="row">
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+<img src="indexima/blog1.jpg" class="img-fluid">
+
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+<img src="indexima/1.jpeg" class="img-fluid">
+
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+<img src="indexima/2.jpg" class="img-fluid">
+
+</div>
+
+
+
+</div>
+</div>
+</section>
+<!-- FOOTER PROFESIONAL -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo + descripción -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h3>Punto y Afecto</h3>
+                <p>Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.</p>
+            </div>
+
+            <!-- Servicios -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Servicios</h5>
+                <ul>
+                    <li>Venta de lanas</li>
+                    <li>Tejidos personalizados</li>
+                    <li>Artesanías</li>
+                    <li>Envíos a todo el país</li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Contáctanos</h5>
+                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
+                <p><i class="bi bi-facebook"></i> Facebook</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+                <p><i class="bi bi-tiktok"></i> TikTok</p>
+            </div>
+
+        </div>
+
+        <!-- Línea divisoria -->
+        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+
+        <!-- Derechos -->
+        <p class="text-center mb-0">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+          <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

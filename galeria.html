@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!-- Define el documento como HTML5 -->
+<html lang="es"> <!-- Idioma de la página: español -->
+<head>
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales y tildes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+    <title>Punto y Afecto</title> <!-- Título de la pestaña -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Galeria.css">
+</head>
+<body>
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
+            <span class="fw-bold text-primary">Punto y</span> Afecto
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiensoy.html">¿Quién soy?</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+            <!-- Botón CTA -->
+            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO CON VIDEO -->
+<section class="hero-video">
+    <!-- Video -->
+    <video autoplay muted loop class="video-bg">
+        <source src="hola.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay oscuro -->
+    <div class="overlay"></div>
+
+    <!-- Texto encima del video -->
+    <div class="content">
+        <h1>Las mejores lanas</h1>
+        <p>Calidad y detalle</p>
+        <a href="#" class="btn btn-primary">Ver mas</a>
+    </div>
+
+    <!-- ONDA SVG -->
+    <div class="wave">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-18.98,88.31 C210.21,248.19 334.36,-125.81 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
+        </svg>
+    </div>
+</section>
+<!-- GALERÍA DE PRODUCTOS -->
+<div class="container mt-5"> <!-- Margen superior para separarlo del navbar -->
+    <div class="row">
+
+        <!-- Tarjeta 1 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/b.jpeg" class="card-img-top" alt="Producto 1">
+                <div class="card-body text-center">
+                    <p>"Tu guía paso a paso: desde la primera cadena hasta el punto final."</p>
+                    <a href="#" class="btn btn-primary">Precio $12</a> <!-- Botón con precio -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/e.jpeg" class="card-img-top" alt="Producto 2">
+                <div class="card-body text-center">
+                    <p>"Colores vibrantes y acabado profesional que hacen resaltar cada una de tus piezas."</p>
+                    <a href="#" class="btn btn-primary">Precio $15</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/n.jpeg" class="card-img-top" alt="Producto 3">
+                <div class="card-body text-center">
+                    <p>"Ligereza y versatilidad: el hilo ideal para principiantes y proyectos de gran tamaño."</p>
+                    <a href="#" class="btn btn-primary">Precio $18</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/o.jpeg" class="card-img-top" alt="Producto 4">
+                <div class="card-body text-center">
+                    <p>"El equilibrio ideal: la suavidad del algodón con la resistencia del acrílico."</p>
+                    <a href="#" class="btn btn-primary">Precio $20</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/s.jpeg" class="card-img-top" alt="Producto 5">
+                <div class="card-body text-center">
+                    <p>"Crea tus propios amigurumis: kits premium para todos los niveles."</p>
+                    <a href="#" class="btn btn-primary">Precio $25</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="col-sm-4 mb-4">
+            <div class="card shadow-sm border-0">
+                <img src="soy/y.jpeg" class="card-img-top" alt="Producto 6">
+                <div class="card-body text-center">
+                    <p>"Calidad en cada fibra: 100% algodón suave, seguro y perfecto para tus creaciones."</p>
+                    <a href="#" class="btn btn-primary">Precio $22</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER PROFESIONAL -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+
+            <!-- Logo + descripción -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h3>Punto y Afecto</h3>
+                <p>Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.</p>
+            </div>
+
+            <!-- Servicios -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Servicios</h5>
+                <ul>
+                    <li>Venta de lanas</li>
+                    <li>Tejidos personalizados</li>
+                    <li>Artesanías</li>
+                    <li>Envíos a todo el país</li>
+                </ul>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Contáctanos</h5>
+                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
+                <p><i class="bi bi-facebook"></i> Facebook</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+                <p><i class="bi bi-tiktok"></i> TikTok</p>
+            </div>
+
+        </div>
+
+        <!-- Línea divisoria -->
+        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+
+        <!-- Derechos -->
+        <p class="text-center mb-0">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Scripts Bootstrap -->
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

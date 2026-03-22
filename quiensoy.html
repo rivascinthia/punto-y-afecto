@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- CSS personalizado -->
+<link rel="stylesheet" href="quienes.css">
+
+<title>¿Quién Soy? - Punto y Afecto</title>
+</head>
+
+<body>
+
+
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
+            <span class="fw-bold text-primary">Punto y</span> Afecto
+        </a>
+
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiensoy.html">¿Quién soy?</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+            <!-- Botón CTA -->
+            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+    <div class="contenido-hero text-center">
+        <h3>La Mejor</h3>
+        <h5>Oferta</h5>
+        <a href="#contacto" class="btn btn-primary">Contactame</a>
+    </div>
+
+  <!-- ONDA SVG igual que "¿Quién soy?" -->
+    <div class="wave"> <!-- Cambié la clase a wave igual que "¿Quién soy?" -->
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-18.98,88.31 C210.21,248.19 334.36,-125.81 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                  style="stroke: none; fill: rgba(120, 146, 167, 0.7);">
+            </path>
+        </svg>
+    </div>
+</div>
+
+
+
+
+<!-- =======================
+     PERFIL
+======================= -->
+<section class="Perfil text-center">
+    <div class="container">
+        <h1>¿Quién Soy?</h1>
+        <h3>Cinthia Rivas</h3>
+        <p>"¡Descubre la calidez y suavidad de nuestra lana de alta calidad! Perfecta para tejer prendas únicas y acogedoras, 
+            nuestra lana es ideal para quienes buscan un toque de elegancia y confort en sus creaciones. Con una variedad de colores
+             y texturas, podrás crear algo especial para ti o para regalar."</p>
+        <p>"Desde suaves bufandas hasta cálidos gorros, nuestra lana es la elección perfecta para cualquier proyecto. 
+            ¡No te pierdas la oportunidad de crear algo hermoso con nuestra lana de alta calidad!"</p>
+    </div>
+</section>
+
+<!-- =======================
+     GALERÍA
+======================= -->
+<section class="Galeria">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2>Galería</h2>
+            <h4>¡Inspírate en nuestras creaciones y descubre la magia de la lana transformada en arte!</h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/1gal.jpg" class="img-fluid" alt="Galería 1"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/gal2.webp" class="img-fluid" alt="Galería 2"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/3gal.jpg" class="img-fluid" alt="Galería 3"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/4gal.webp" class="img-fluid" alt="Galería 4"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/gal5.jpg" class="img-fluid" alt="Galería 5"></div>
+            <div class="col-sm-12 col-md-6 col-lg-4"><img src="galeria/gal6.webp" class="img-fluid" alt="Galería 6"></div>
+        </div>
+    </div>
+</section>
+
+<!-- =======================
+     CONTACTO
+======================= -->
+<section id="contacto" class="Contacto container my-5">
+    <h1 class="text-center mb-4">Contacto</h1>
+    <h4>Puede dejar aqui sus datos por si no carga nuestra pagina bienvenido al mundo mas colorido </h4>
+    <form>
+        <div class="row">
+            <input class="form-control col-md-6 mb-2" type="text" placeholder="Nombre">
+            <input class="form-control col-md-6 mb-2" type="email" placeholder="Email">
+            <textarea class="form-control col-md-12 mb-2" placeholder="Mensaje"></textarea>
+            <a href="#" class="btn btn-primary col-12">Enviar</a>
+        </div>
+    </form>
+</section>
+
+<!-- =======================
+     FOOTER
+======================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Logo + descripción -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h3>Punto y Afecto</h3>
+                <p>Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.</p>
+            </div>
+            <!-- Servicios -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Servicios</h5>
+                <ul>
+                    <li>Venta de lanas</li>
+                    <li>Tejidos personalizados</li>
+                    <li>Artesanías</li>
+                    <li>Envíos a todo el país</li>
+                </ul>
+            </div>
+            <!-- Redes sociales -->
+            <div class="col-md-4 mb-4 text-center text-md-start">
+                <h5>Contáctanos</h5>
+                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
+                <p><i class="bi bi-facebook"></i> Facebook</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+                <p><i class="bi bi-tiktok"></i> TikTok</p>
+            </div>
+        </div>
+
+        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+        <p class="text-center mb-0">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <!-- Scripts -->
+          <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

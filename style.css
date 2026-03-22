@@ -1,0 +1,293 @@
+/* =======================
+   IMPORTACIÓN DE FUENTE
+======================= */
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+/* =======================
+   ESTILOS GENERALES
+======================= */
+* {
+    font-family: 'Poppins', sans-serif; /* Fuente global */
+    box-sizing: border-box;              /* Margen y padding incluidos en ancho */
+    margin: 0;                            /* Elimina márgenes por defecto */
+    padding: 0;                           /* Elimina padding por defecto */
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar.bg-gradient {
+    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+}
+
+.navbar .nav-link {
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.navbar .btn-primary {
+    transition: all 0.3s ease;
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+/* =======================
+   HERO VIDEO / IMAGEN
+======================= */
+.hero-video {
+    position: relative;                   /* Para posicionar overlay y contenido */
+    width: 100%;
+    height: 100vh;                        /* Ocupa toda la pantalla */
+    overflow: hidden;                     /* Oculta contenido extra */
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                    /* Video/imagen cubre todo sin deformarse */
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(120, 161, 196, 0.7); /* Capa semitransparente sobre video */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);          /* Centra verticalmente */
+    text-align: center;                    /* Centra texto */
+    color: white;
+    padding: 0 20px;
+}
+
+.content h1 {
+    font-size: clamp(32px, 6vw, 65px);    /* Tamaño adaptable */
+    font-weight: 700;
+}
+
+.content p {
+    font-size: clamp(14px, 2.5vw, 20px);
+    margin-top: 10px;
+}
+
+.content .btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+
+/* =======================
+   ONDA SVG
+======================= */
+.hero-video, .hero-blog {
+    position: relative; /* Necesario para que la onda se posicione respecto al hero */
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;       /* Pegada al fondo del hero */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 100px;   /* Altura base de la onda */
+}
+
+.wave path {
+    fill: rgba(255, 255, 255, 0.7); /* Color de la onda */
+}
+
+
+/* =======================
+   GALERÍA / PRODUCTOS / SERVICIOS / CONTACTO
+======================= */
+.Galeria, .services, .product, .section-icons, .Contacto {
+    padding: 60px 0;
+}
+
+/* Imágenes del mismo tamaño */
+.Galeria img,
+.product .card img,
+.service-card img,
+.Contacto img {
+    width: 100%;             /* Ocupa todo el ancho del contenedor */
+    height: 300px;           /* Altura fija para uniformidad */
+    object-fit: cover;       /* Recorta imagen sin deformar */
+    border-radius: 10px;     /* Bordes redondeados */
+    transition: 0.4s;        /* Suaviza animaciones */
+}
+
+/* Hover para animación ligera */
+.Galeria img:hover,
+.product .card:hover img,
+.service-card:hover img {
+    transform: scale(1.05);  /* Zoom ligero al pasar mouse */
+}
+
+/* Tarjetas de productos y servicios */
+.product .card, .service-card {
+    transition: 0.3s;
+}
+
+.product .card:hover, .service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Overlay en tarjetas de servicios */
+.service-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.service-card .card-img-overlay {
+    z-index: 2;
+}
+
+/* Íconos de secciones */
+.section-icons i {
+    font-size: 45px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+    background: linear-gradient(135deg, #367997, #336679);
+    color: white;
+    padding: 60px 0;
+    font-size: 14px;
+}
+
+.footer h3, .footer h5 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: white;
+}
+
+.footer hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+
+/* =======================
+   RESPONSIVE (TABLETS Y MÓVILES)
+======================= */
+@media (max-width: 768px) {
+
+    /* HERO */
+    .hero-video {
+        height: 60vh;           /* Ajusta altura en tablets */
+    }
+
+    .content h1 {
+        font-size: clamp(24px, 8vw, 36px); /* Texto más pequeño */
+    }
+
+    .content p {
+        font-size: clamp(12px, 4vw, 16px);
+    }
+
+    /* NAVBAR */
+    .navbar a {
+        font-size: 16px;        /* Texto más pequeño */
+    }
+
+    /* FOOTER */
+    .footer {
+        text-align: center;
+    }
+
+    .footer .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    /* Onda SVG */
+    .wave svg {
+        height: 200px;          /* Ajusta altura de onda en tablets */
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* HERO */
+    .hero-video {
+        height: 50vh;           /* Ajuste para móviles */
+    }
+
+    /* Imágenes de galería y productos */
+    .Galeria img,
+    .product .card img,
+    .service-card img {
+        height: 200px;          /* Reduce altura en móviles */
+    }
+
+    /* Texto en contenido */
+    .content h1 {
+        font-size: clamp(20px, 8vw, 28px);
+    }
+
+    .content p {
+        font-size: clamp(10px, 4vw, 14px);
+    }
+
+    /* Onda SVG */
+    .wave svg {
+        height: 120px;          /* Onda más pequeña en móviles */
+    }
+}
