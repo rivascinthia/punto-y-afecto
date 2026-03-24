@@ -105,17 +105,17 @@
 .footer {
     background: linear-gradient(135deg, #367997, #336679);
     color: white;
-    padding: 60px 0;
-    font-size: 14px;
+    padding: 60px 0;/*altur*/
+    font-size: 14px;/*LETR*/
 }
 
 .footer h3, .footer h5 {
-    margin-bottom: 20px;
+    margin-bottom: 20px;/*altura de lo cajas de ahi abajo*/
     font-weight: 600;
 }
 
 .footer p {
-    margin-bottom: 10px;
+    margin-bottom: 10px;/*altura*/
 }
 
 .footer ul {
@@ -124,7 +124,7 @@
 }
 
 .footer ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;/*altura igual*/
 }
 
 .footer hr {

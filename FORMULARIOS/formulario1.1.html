@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario 1</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container mt-4">
+
+<h3>Fill in this form to register</h3>
+
+<form>
+
+<h5>Personal Data</h5>
+
+<!-- PASO 1 y 2 -->
+<div class="row mb-3">
+  <div class="col-md-4">
+    <label class="form-label">Salutation:</label>
+    <select class="form-select">
+      <option>Mr.</option>
+      <option>Mrs.</option>
+    </select>
+  </div>
+
+  <div class="col-md-4">
+    <label class="form-label">First Name:</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="col-md-4">
+    <label class="form-label">Last Name:</label>
+    <input type="text" class="form-control">
+  </div>
+</div>
+
+<div class="mb-3">
+  <label class="form-label">Email:</label>
+  <input type="email" class="form-control">
+</div>
+
+<!-- Radios horizontales (PASO 4) -->
+<div class="mb-3">
+  <label class="form-label">Your Smarts Membership status</label><br>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="m">
+    <label class="form-check-label">Not a member</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="m">
+    <label class="form-check-label">Silver member</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="m">
+    <label class="form-check-label">Gold member</label>
+  </div>
+</div>
+
+<!-- PASO 3 -->
+<h5>Your Conference Account</h5>
+
+<div class="mb-3">
+  <label>Login name:</label>
+  <input type="text" class="form-control">
+</div>
+
+<div class="row mb-3">
+  <div class="col-md-6">
+    <label>Password:</label>
+    <input type="password" class="form-control">
+  </div>
+
+  <div class="col-md-6">
+    <label>Confirm Password:</label>
+    <input type="password" class="form-control">
+  </div>
+</div>
+
+<!-- CHECKBOX horizontales -->
+<h5>Sessions</h5>
+
+<label>What are the tracks you are interested in?</label><br>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox">
+  <label class="form-check-label">ALM</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox">
+  <label class="form-check-label">ASP.NET</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox">
+  <label class="form-check-label">C#</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox">
+  <label class="form-check-label">Visual Basic</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox">
+  <label class="form-check-label">SQL</label>
+</div>
+
+<div class="mt-3">
+  <label>What do you expect from sessions?</label>
+  <textarea class="form-control"></textarea>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
