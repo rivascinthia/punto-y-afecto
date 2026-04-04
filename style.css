@@ -98,7 +98,7 @@
     height: 100px; /* Altura base de la onda */
 }
 .wave path {
-    fill: rgba(230, 231, 238, 0.7); /* Color de la onda */
+    fill: rgba(252, 252, 252, 0.7); /* Color de la onda */
 }
 
 /* =======================
@@ -200,9 +200,7 @@
         font-size: clamp(12px, 4vw, 16px);
     }
 
-    .wave svg {
-        height: 200px;
-    }
+    
 }
 
 @media (max-width: 576px) {
