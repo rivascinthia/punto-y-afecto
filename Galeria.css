@@ -113,6 +113,11 @@
 .card-body a.btn {
     margin-top: 10px; /* Separación del texto */
 }
+/* ===== BANNER ===== */
+.banner{
+    height: 400px;
+    background: url('indexima/8.jpg') no-repeat center center/cover;
+}
 
 /* =======================
    FOOTER

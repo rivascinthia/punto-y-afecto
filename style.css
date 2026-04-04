@@ -14,7 +14,6 @@
     margin: 0;                            /* Elimina márgenes por defecto */
     padding: 0;                           /* Elimina padding por defecto */
 }
-
 /* =======================
    NAVBAR
 ======================= */
@@ -39,150 +38,110 @@
     background-color: #0b5ed7;
     transform: translateY(-2px);
 }
-
 /* =======================
-   HERO VIDEO / IMAGEN
+   HERO VIDEO
 ======================= */
 .hero-video {
-    position: relative;                   /* Para posicionar overlay y contenido */
+    position: relative; /* Permite overlay y contenido encima */
     width: 100%;
-    height: 100vh;                        /* Ocupa toda la pantalla */
-    overflow: hidden;                     /* Oculta contenido extra */
+    height: 100vh; /* Altura completa de la pantalla */
+    overflow: hidden; /* Evita scroll por video */
 }
-
 .video-bg {
-    position: absolute;
+    position: absolute; /* Video sobre hero-video */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;                    /* Video/imagen cubre todo sin deformarse */
-    z-index: 0;
+    object-fit: cover; /* Mantiene proporción sin deformar */
+    z-index: 0; /* Debajo del overlay y texto */
 }
-
 .overlay {
-    position: absolute;
+    position: absolute; /* Capa sobre el video */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(120, 161, 196, 0.7); /* Capa semitransparente sobre video */
-    z-index: 1;
+    background: rgba(120, 161, 196, 0.7); /* Azul semi-transparente */
+    z-index: 1; /* Encima del video */
 }
-
 .content {
-    position: relative;
-    z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);          /* Centra verticalmente */
-    text-align: center;                    /* Centra texto */
+    position: relative; /* Para centrar sobre overlay */
+    z-index: 2; /* Encima de overlay */
+    top: 50%; /* Centrado vertical */
+    transform: translateY(-50%); /* Ajuste exacto */
+    text-align: center;
     color: white;
-    padding: 0 20px;
+    padding: 0 20px; /* Evita que el texto toque bordes en móvil */
 }
-
 .content h1 {
-    font-size: clamp(32px, 6vw, 65px);    /* Tamaño adaptable */
-    font-weight: 700;
+    font-size: clamp(32px, 6vw, 60px); /* Se ajusta automáticamente según pantalla */
 }
-
 .content p {
-    font-size: clamp(14px, 2.5vw, 20px);
-    margin-top: 10px;
+    font-size: clamp(14px, 2.5vw, 20px); /* Ajuste automático */
 }
-
-.content .btn {
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 18px;
-}
-
-
 /* =======================
    ONDA SVG
 ======================= */
-.hero-video, .hero-blog {
-    position: relative; /* Necesario para que la onda se posicione respecto al hero */
-}
-
 .wave {
-    position: absolute;
-    bottom: 0;       /* Pegada al fondo del hero */
-    left: 0;
+    position: absolute; /* Posición sobre hero-video */
+    bottom: 0;          /* Pegada al fondo del hero */
     width: 100%;
     overflow: hidden;
-    line-height: 0;
-    z-index: 2;
+    line-height: 0;     /* Quita altura extra */
+    z-index: 3;         /* Encima del overlay pero detrás del texto */
 }
-
 .wave svg {
+    position: relative;
     display: block;
     width: 100%;
-    height: 100px;   /* Altura base de la onda */
+    height: 100px; /* Altura base de la onda */
 }
-
 .wave path {
-    fill: rgba(255, 255, 255, 0.7); /* Color de la onda */
+    fill: rgba(230, 231, 238, 0.7); /* Color de la onda */
 }
-
 
 /* =======================
-   GALERÍA / PRODUCTOS / SERVICIOS / CONTACTO
+   SECCIONES
 ======================= */
-.Galeria, .services, .product, .section-icons, .Contacto {
+.product,
+.section-icons {
     padding: 60px 0;
 }
 
-/* Imágenes del mismo tamaño */
-.Galeria img,
-.product .card img,
-.service-card img,
-.Contacto img {
-    width: 100%;             /* Ocupa todo el ancho del contenedor */
-    height: 300px;           /* Altura fija para uniformidad */
-    object-fit: cover;       /* Recorta imagen sin deformar */
-    border-radius: 10px;     /* Bordes redondeados */
-    transition: 0.4s;        /* Suaviza animaciones */
+/* =======================
+   TARJETAS
+======================= */
+.card {
+    transition: 0.3s;
+    height: 100%;
 }
 
-/* Hover para animación ligera */
-.Galeria img:hover,
-.product .card:hover img,
-.service-card:hover img {
-    transform: scale(1.05);  /* Zoom ligero al pasar mouse */
+.card:hover {
+    transform: translateY(-5px);
 }
 
-/* Tarjetas de productos y servicios */
-.product .card, .service-card {
+/* 🔥 IMÁGENES IGUALES */
+.card img {
+    width: 100%;
+    height: 250px;       /* TODAS iguales */
+    object-fit: cover;   /* No se deforman */
+    border-radius: 10px 10px 0 0;
     transition: 0.3s;
 }
 
-.product .card:hover, .service-card:hover {
+.card:hover img {
     transform: scale(1.05);
 }
 
-/* Overlay en tarjetas de servicios */
-.service-card::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.6);
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.service-card .card-img-overlay {
-    z-index: 2;
-}
-
-/* Íconos de secciones */
+/* =======================
+   ICONOS
+======================= */
 .section-icons i {
     font-size: 45px;
     color: #007bff;
     margin-bottom: 10px;
 }
-
 
 /* =======================
    FOOTER
@@ -194,7 +153,8 @@
     font-size: 14px;
 }
 
-.footer h3, .footer h5 {
+.footer h3,
+.footer h5 {
     margin-bottom: 20px;
     font-weight: 600;
 }
@@ -220,64 +180,41 @@
 
 .footer hr {
     margin: 20px 0;
-    border: 0;
     border-top: 1px solid rgba(255,255,255,0.4);
 }
 
-
 /* =======================
-   RESPONSIVE (TABLETS Y MÓVILES)
+   RESPONSIVE
 ======================= */
 @media (max-width: 768px) {
 
-    /* HERO */
     .hero-video {
-        height: 60vh;           /* Ajusta altura en tablets */
+        height: 60vh;
     }
 
     .content h1 {
-        font-size: clamp(24px, 8vw, 36px); /* Texto más pequeño */
+        font-size: clamp(24px, 8vw, 36px);
     }
 
     .content p {
         font-size: clamp(12px, 4vw, 16px);
     }
 
-    /* NAVBAR */
-    .navbar a {
-        font-size: 16px;        /* Texto más pequeño */
-    }
-
-    /* FOOTER */
-    .footer {
-        text-align: center;
-    }
-
-    .footer .col-md-4 {
-        margin-bottom: 20px;
-    }
-
-    /* Onda SVG */
     .wave svg {
-        height: 200px;          /* Ajusta altura de onda en tablets */
+        height: 200px;
     }
 }
 
 @media (max-width: 576px) {
 
-    /* HERO */
     .hero-video {
-        height: 50vh;           /* Ajuste para móviles */
+        height: 50vh;
     }
 
-    /* Imágenes de galería y productos */
-    .Galeria img,
-    .product .card img,
-    .service-card img {
-        height: 200px;          /* Reduce altura en móviles */
+    .card img {
+        height: 180px;  /* más pequeñas en móvil */
     }
 
-    /* Texto en contenido */
     .content h1 {
         font-size: clamp(20px, 8vw, 28px);
     }
@@ -286,8 +223,7 @@
         font-size: clamp(10px, 4vw, 14px);
     }
 
-    /* Onda SVG */
     .wave svg {
-        height: 120px;          /* Onda más pequeña en móviles */
+        height: 120px;
     }
 }
