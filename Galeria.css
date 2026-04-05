@@ -1,34 +1,39 @@
 /* =======================
    IMPORTACIÓN DE FUENTE
 ======================= */
-/* Importa la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 
 /* =======================
    ESTILOS GENERALES
 ======================= */
 * {
-    font-family: 'Poppins', sans-serif; /* Fuente global */
-    box-sizing: border-box;              /* Margen y padding incluidos en ancho */
-    margin: 0;                            /* Elimina márgenes por defecto */
-    padding: 0;                           /* Elimina padding por defecto */
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/* SCROLL SUAVE */
+html {
+    scroll-behavior: smooth;
+}
+
+/* SOLUCIÓN NAVBAR (para que no tape) */
+#galeria {
+    scroll-margin-top: 100px;
+}
+
 /* =======================
-   NAVBAR AZUL PRO
+   NAVBAR
 ======================= */
-
-/* FONDO AZUL SÓLIDO */
 .navbar.bg-gradient {
-        background: linear-gradient(135deg, #367997, #367997) !important;
+    background: #367997 !important;
 }
 
-/* EVITA TRANSPARENCIAS */
 .navbar {
     opacity: 1 !important;
 }
 
-/* LINKS */
 .navbar .nav-link {
     color: white !important;
     transition: 0.3s;
@@ -36,56 +41,25 @@
 }
 
 .navbar .nav-link:hover {
-     color:#367997 !important;
+    color: #d1ecf5 !important;
 }
 
-/* BOTÓN CONTACTO */
 .navbar .btn-light {
-     background:#367997;
-       color:#ffffff;
+    background: #367997;
+    color: #ffffff;
     border-radius: 10px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-.navbar .btn-light:hover {
-    background:#367997;
-}
-
-/* HAMBURGUESA */
 .navbar-toggler {
-    background-color:#367997;
-
+    background-color: #367997;
     border: none;
-    padding: 6px 10px;
 }
 
-/* ICONO BLANCO */
 .navbar-toggler-icon {
     filter: invert(1);
 }
 
-/* 📱 MENÚ DESPLEGABLE EN CELULAR */
-@media (max-width: 991px) {
-
-    .navbar-collapse {
-       background:#367997;
-        padding: 15px;
-        border-radius: 10px;
-        margin-top: 10px;
-    }
-
-    .navbar .nav-link {
-        color: white !important;
-        padding: 10px;
-        display: block;
-    }
-
-    .navbar .nav-link:hover {
-        background: rgba(255,255,255,0.2);
-        border-radius: 8px;
-    }
-}
 /* =======================
    HERO VIDEO
 ======================= */
@@ -96,7 +70,6 @@
     overflow: hidden;
 }
 
-/* VIDEO */
 .video-bg {
     position: absolute;
     top: 0;
@@ -107,21 +80,19 @@
     z-index: 0;
 }
 
-/* OVERLAY (oscuro suave, NO blanco) */
+/* 🔥 ARREGLO CLAVE */
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* 🔥 suave y profesional */
+    background: rgba(0,0,0,0.3);
     z-index: 1;
+    pointer-events: none; /* 👈 SOLUCIÓN DEL BOTÓN */
 }
 
-/* CONTENIDO */
 .content {
     position: relative;
-    z-index: 2;
+    z-index: 10; /* 👈 Asegura que esté encima */
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -129,46 +100,38 @@
     padding: 0 20px;
 }
 
-/* TÍTULO */
 .content h1 {
     font-size: clamp(32px, 6vw, 60px);
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 🔥 mejora lectura */
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
-/* TEXTO */
 .content p {
     font-size: clamp(14px, 2.5vw, 20px);
     text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
 }
+
 /* =======================
-   BOTÓN VER PRODUCTOS
+   BOTÓN VER MÁS 🔥
 ======================= */
 .btn-ver {
     display: inline-block;
-    background: #367997; /* azul principal */
+    background: #367997;
     color: white;
     padding: 12px 28px;
-    border-radius: 30px; /* redondeado */
+    border-radius: 60px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: pulse 2s infinite;
 }
 
-/* HOVER (cuando pasas el mouse) */
 .btn-ver:hover {
-    background: #367997;/* azul más oscuro */
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* ANIMACIÓN SUAVE (llamativo) */
-.btn-ver {
-    animation: pulse 2s infinite;
-}
-
-/* EFECTO "RESPIRAR" */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -179,105 +142,82 @@
    ONDA SVG
 ======================= */
 .wave {
-    position: absolute; /* Posición sobre hero-video */
-    bottom: 0;          /* Pegada al fondo del hero */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;     /* Quita altura extra */
-    z-index: 3;         /* Encima del overlay pero detrás del texto */
+    line-height: 0;
+    z-index: 3;
 }
+
 .wave svg {
-    position: relative;
-    display: block;
     width: 100%;
-    height: 100px; /* Altura base de la onda */
+    height: 100px;
 }
+
 .wave path {
-    fill: rgba(255, 255, 255, 0.7); /* Color de la onda */
+    fill: rgba(255,255,255,0.7);
 }
 
 /* =======================
-   GALERÍA DE PRODUCTOS
+   GALERÍA
 ======================= */
 .card img {
-    width: 100%; /* Ocupa todo el ancho de la tarjeta */
-    height: 200px; /* Alto fijo */
-    object-fit: cover; /* Ajusta imagen sin deformar */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
+
 .card-body a.btn {
-    margin-top: 10px; /* Separación del texto */
-}
-/* ===== BANNER ===== */
-.banner{
-    height: 400px;
-    background: url('indexima/8.jpg') no-repeat center center/cover;
+    margin-top: 10px;
 }
 
 /* =======================
    FOOTER
 ======================= */
 .footer {
-    background: linear-gradient(135deg, #367997, #336679); /* Degradado celeste */
+    background: linear-gradient(135deg, #367997, #336679);
     color: white;
     padding: 60px 0;
-    font-size: 14px;
 }
+
 .footer h3, .footer h5 {
     margin-bottom: 20px;
-    font-weight: 600;
 }
-.footer p {
-    margin-bottom: 10px;
-}
+
 .footer ul {
     list-style: none;
     padding: 0;
 }
-.footer ul li {
-    margin-bottom: 8px;
-}
-.footer i {
-    font-size: 20px;
-    margin-right: 8px;
-    color: white;
-}
-.footer hr {
-    margin: 20px 0;
-    border: 0;
-    border-top: 1px solid rgba(255,255,255,0.4);
-}
 
 /* =======================
-   RESPONSIVE PARA MÓVILES
+   RESPONSIVE
 ======================= */
 @media (max-width: 768px) {
-    /* Ajuste hero */
     .hero-video {
-        height: 60vh; /* Altura menor en móviles */
+        height: 60vh;
     }
+
     .content h1 {
-        font-size: clamp(24px, 8vw, 36px); /* Ajuste automático */
+        font-size: clamp(24px, 8vw, 36px);
     }
+
     .content p {
         font-size: clamp(12px, 4vw, 16px);
     }
-    /* Ajuste onda */
+
     .wave svg {
-    height: 200px; /* más grande */
-}
-@media (max-width: 768px) {
-    .wave svg {
-        height: 200px; /* proporcional en móviles */
+        height: 200px;
     }
-}
-    /* Footer centrado y márgenes */
+
     .footer {
         text-align: center;
     }
+
     .footer .col-md-4 {
         margin-bottom: 20px;
     }
-    /* Navbar en móvil */
+
     .navbar a {
         font-size: 16px;
     }
