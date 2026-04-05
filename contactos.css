@@ -66,7 +66,6 @@
     transform: scale(1.1);
 }
 
-/* Animación */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -77,7 +76,7 @@
    HERO
 ======================= */
 .hero {
-    height: 100vh;
+    height: 100vh; /* Desktop */
     min-height: 300px;
     background: url("indexima/6.jpg") no-repeat center center;
     background-size: cover;
@@ -93,6 +92,7 @@
     z-index: 2;
     text-align: center;
     color: white;
+    padding-top: 120px; /* Desktop */
 }
 
 .contenido-hero h3 {
@@ -107,11 +107,44 @@
 }
 
 /* =======================
+   RESPONSIVE HERO
+======================= */
+@media (max-width: 992px) {
+    .hero {
+        height: 70vh; /* más pequeño en tablets */
+    }
+    .contenido-hero {
+        padding-top: 80px;
+    }
+    .contenido-hero h3 {
+        font-size: 45px;
+    }
+    .contenido-hero h5 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        height: 50vh; /* más pequeño en móviles */
+    }
+    .contenido-hero {
+        padding-top: 60px;
+    }
+    .contenido-hero h3 {
+        font-size: 28px;
+    }
+    .contenido-hero h5 {
+        font-size: 16px;
+    }
+}
+
+/* =======================
    ONDA
 ======================= */
 .wave {
     position: absolute;
-    bottom: -20px; /* 🔥 ajustado */
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 150px;
@@ -144,29 +177,24 @@
     margin-bottom: 50px;
 }
 
-/* 🔥 ARREGLO TAMAÑOS */
-.contacto-card, 
-.mapa-card {
+.contacto-card, .mapa-card {
     background: white;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     transition: 0.3s;
-    height: 100%; /* 🔥 clave */
+    height: 100%;
 }
 
-.contacto-card:hover, 
-.mapa-card:hover {
+.contacto-card:hover, .mapa-card:hover {
     transform: translateY(-5px);
 }
 
-.contacto-card h3, 
-.mapa-card h3 {
+.contacto-card h3, .mapa-card h3 {
     margin-bottom: 20px;
     color: #367997;
 }
 
-/* FORMULARIO */
 .contacto-card input,
 .contacto-card textarea {
     width: 100%;
@@ -185,11 +213,10 @@
     border-radius: 8px;
 }
 
-/* MAPA */
 .mapa-card iframe {
     width: 100%;
     height: 100%;
-    min-height: 400px; /* 🔥 iguala altura */
+    min-height: 400px;
     border-radius: 15px;
     border: 0;
 }
@@ -229,5 +256,8 @@
 @media (max-width: 576px) {
     .contenido-hero h3 {
         font-size: 35px;
+    }
+    .contenido-hero h5 {
+        font-size: 18px;
     }
 }
