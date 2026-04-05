@@ -15,70 +15,164 @@
     padding: 0;                           /* Elimina padding por defecto */
 }
 /* =======================
-   NAVBAR
+   NAVBAR AZUL PRO
 ======================= */
+
+/* FONDO AZUL SÓLIDO */
 .navbar.bg-gradient {
-    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+        background: linear-gradient(135deg, #367997, #367997) !important;
 }
 
+/* EVITA TRANSPARENCIAS */
+.navbar {
+    opacity: 1 !important;
+}
+
+/* LINKS */
 .navbar .nav-link {
-    transition: all 0.3s ease;
+    color: white !important;
+    transition: 0.3s;
+    font-weight: 500;
 }
 
 .navbar .nav-link:hover {
-    color: #0d6efd;
-    text-decoration: underline;
+     color:#367997 !important;
 }
 
-.navbar .btn-primary {
-    transition: all 0.3s ease;
+/* BOTÓN CONTACTO */
+.navbar .btn-light {
+     background:#367997;
+       color:#ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.navbar .btn-primary:hover {
-    background-color: #0b5ed7;
-    transform: translateY(-2px);
+.navbar .btn-light:hover {
+    background:#367997;
+}
+
+/* HAMBURGUESA */
+.navbar-toggler {
+    background-color:#367997;
+
+    border: none;
+    padding: 6px 10px;
+}
+
+/* ICONO BLANCO */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* 📱 MENÚ DESPLEGABLE EN CELULAR */
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+       background:#367997;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-link {
+        color: white !important;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar .nav-link:hover {
+        background: rgba(255,255,255,0.2);
+        border-radius: 8px;
+    }
 }
 /* =======================
    HERO VIDEO
 ======================= */
 .hero-video {
-    position: relative; /* Permite overlay y contenido encima */
+    position: relative;
     width: 100%;
-    height: 100vh; /* Altura completa de la pantalla */
-    overflow: hidden; /* Evita scroll por video */
+    height: 100vh;
+    overflow: hidden;
 }
+
+/* VIDEO */
 .video-bg {
-    position: absolute; /* Video sobre hero-video */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantiene proporción sin deformar */
-    z-index: 0; /* Debajo del overlay y texto */
+    object-fit: cover;
+    z-index: 0;
 }
+
+/* OVERLAY (oscuro suave, NO blanco) */
 .overlay {
-    position: absolute; /* Capa sobre el video */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(120, 161, 196, 0.7); /* Azul semi-transparente */
-    z-index: 1; /* Encima del video */
+    background: rgba(0, 0, 0, 0.3); /* 🔥 suave y profesional */
+    z-index: 1;
 }
+
+/* CONTENIDO */
 .content {
-    position: relative; /* Para centrar sobre overlay */
-    z-index: 2; /* Encima de overlay */
-    top: 50%; /* Centrado vertical */
-    transform: translateY(-50%); /* Ajuste exacto */
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
     color: white;
-    padding: 0 20px; /* Evita que el texto toque bordes en móvil */
+    padding: 0 20px;
 }
+
+/* TÍTULO */
 .content h1 {
-    font-size: clamp(32px, 6vw, 60px); /* Se ajusta automáticamente según pantalla */
+    font-size: clamp(32px, 6vw, 60px);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* 🔥 mejora lectura */
 }
+
+/* TEXTO */
 .content p {
-    font-size: clamp(14px, 2.5vw, 20px); /* Ajuste automático */
+    font-size: clamp(14px, 2.5vw, 20px);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+/* =======================
+   BOTÓN VER PRODUCTOS
+======================= */
+.btn-ver {
+    display: inline-block;
+    background: #367997; /* azul principal */
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px; /* redondeado */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* HOVER (cuando pasas el mouse) */
+.btn-ver:hover {
+    background: #367997;/* azul más oscuro */
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ANIMACIÓN SUAVE (llamativo) */
+.btn-ver {
+    animation: pulse 2s infinite;
+}
+
+/* EFECTO "RESPIRAR" */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 /* =======================
    ONDA SVG
@@ -113,25 +207,68 @@
    TARJETAS
 ======================= */
 .card {
-    transition: 0.3s;
+    transition: all 0.3s ease;
     height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
+/* HOVER MÁS PRO */
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
 /* 🔥 IMÁGENES IGUALES */
 .card img {
     width: 100%;
-    height: 250px;       /* TODAS iguales */
-    object-fit: cover;   /* No se deforman */
-    border-radius: 10px 10px 0 0;
+    height: 230px;       /* más equilibrado */
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    transition: transform 0.4s ease;
+}
+
+/* ZOOM SUAVE */
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* =======================
+   TEXTO
+======================= */
+.card-body h5 {
+    font-size: 1.1rem;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+}
+
+/* =======================
+   BOTONES
+======================= */
+.btn-primary {
+    border-radius: 8px;
     transition: 0.3s;
 }
 
-.card:hover img {
+.btn-primary:hover {
+    background-color: #0d6efd;
     transform: scale(1.05);
+}
+
+/* =======================
+   BADGES (nuevo / popular)
+======================= */
+.badge-custom {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
 
 /* =======================

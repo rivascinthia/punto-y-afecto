@@ -11,13 +11,12 @@
 </head>
 
 <body>
-
 <!-- NAVBAR  -->
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
     <div class="container">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
-            <span class="fw-bold text-primary">Punto y</span> Afecto
+            <span class="fw-bold text-white">Punto y</span> <span class="text-white">Afecto</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
@@ -32,11 +31,11 @@
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             </ul>
-            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+
+            <a href="contacto.html" class="btn btn-light ms-lg-3 fw-bold">Contáctame</a>
         </div>
     </div>
 </nav>
-
 <!-- HERO -->
 <section class="hero-video">
     <video autoplay muted loop class="video-bg">
@@ -48,7 +47,7 @@
     <div class="content">
   <h1>Lanas que inspiran tus creaciones</h1>
         <p>Calidad premium, suavidad incomparable y pasión en cada fibra</p>
-        <a href="#" class="btn btn-primary">Ver productos</a>
+    <a href="#productos" class="btn-ver">Ver productos</a>
     </div>
 
 
@@ -58,319 +57,415 @@
             <path d="M-18.98,88.31 C210.21,248.19 334.36,-125.81 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"></path>
         </svg>
     </div>
-</section>
-
-<!-- SECCIÓN EXTRA -->
-<section class="text-center py-5 bg-light">
+    </section>
+    <!-- SECCIÓN EXTRA: ¿POR qué elegirnos? -->
+<section class="text-center py-5" style="background-color: #f7f7f7;">
     <div class="container">
-        <h2>¿Por qué elegirnos?</h2>
-        <p>Seleccionamos las mejores fibras naturales para ofrecer productos únicos, suaves y duraderos. Cada hilo refleja dedicación, calidad y amor por el tejido.</p>
+        <h2 class="fw-bold mb-4 display-5" style="color: #367997;"> ¿Por qué elegir Punto y Afecto?</h2>
+        <p class="fs-5 mb-3" style="color: #000;">
+            En Punto y Afecto no solo vendemos lanas y accesorios, creamos experiencias que inspiran creatividad y estilo. Cada hilo ha sido cuidadosamente seleccionado para ofrecer calidad, suavidad y durabilidad en cada proyecto.
+        </p>
+        <p class="fs-5 mb-3" style="color: #000;">
+            Nuestro compromiso es ayudarte a dar vida a tus ideas: desde pequeños detalles hasta grandes creaciones, con materiales que garantizan resultados sorprendentes y consistentes.
+        </p>
+        <p class="fs-5 mb-4" style="color: #000;">
+            Además, cada compra que realizas contribuye a apoyar el trabajo artesanal y la creatividad local. Porque tu proyecto merece lo mejor, y tú mereces disfrutar cada puntada sin preocupaciones.
+        </p>
     </div>
 </section>
-
-<!-- PRODUCTOS -->
-<section class="product">
+ <!-- PRODUCTOS -->
+<section id="productos" class="product py-5" style="background-color: #ffffff;">
     <div class="container">
-        <h2 class="text-center mb-4">Productos</h2>
-      
-        <div class="row">
+        <h2 class="text-center mb-4 fw-bold display-5" style="color: #367997;">Nuestros Productos</h2>
+        <p class="text-center mb-5 fs-5" style="color: #000;">
+            Explora nuestra amplia selección de lanas, kits y accesorios que harán que tus proyectos destaquen ✨
+        </p>
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="indexima/crocht.jpeg">
-                    <div class="card-body">
-                        <h5>Crochet</h5>
-                        <p>Ideal para detalles y proyectos pequeños</p>
-                        <p class="fw-bold">Desde Bs 18</p>
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg position-relative flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <span class="badge-custom" style="background-color:#367997; color:#fff;">Popular</span>
+                    <img src="indexima/crocht.jpeg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Crochet</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Descubre el arte del crochet con hilos seleccionados para lograr puntadas finas y figuras delicadas. Perfecto para principiantes y expertos que buscan detalles únicos.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 18</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="indexima/lanagruesa.jpeg">
-                    <div class="card-body">
-                        <h5>Lana Gruesa</h5>
-                        <p>Perfecta para prendas abrigadas</p>
-                        <p class="fw-bold">Desde Bs 35</p>
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg position-relative flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <span class="badge-custom" style="background-color:#367997; color:#fff;">Nuevo</span>
+                    <img src="indexima/lanagruesa.jpeg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lana Gruesa</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Perfecta para tejer bufandas, mantas y suéteres abrigadores. Su textura suave y consistente garantiza un acabado profesional y cálido para tus proyectos.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 35</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="indexima/lana delgada.jpeg">
-                    <div class="card-body">
-                        <h5>Lana Fina</h5>
-                        <p>Suave y elegante</p>
-                        <p class="fw-bold">Desde Bs 35</p>
+            <!-- CARD 3 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <span class="badge-custom" style="background-color:#367997; color:#fff;">Premium</span>
+                    <img src="indexima/lana delgada.jpeg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lana Fina</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Suave y elegante, ideal para proyectos delicados como chales, gorros y detalles sofisticados. Cada hebra ofrece resistencia y comodidad al tacto.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 35</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="indexima/amigurimi.jpeg">
-                    <div class="card-body">
-                        <h5>Amigurumis</h5>
-                        <p>Hechos a mano con amor</p>
-                        <p class="fw-bold">Desde Bs 85</p>
+            <!-- CARD 4 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <span class="badge-custom" style="background-color:#367997; color:#fff;">Oferta</span>
+                    <img src="indexima/amigurimi.jpeg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Amigurumis</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Encantadoras figuras tejidas a mano con gran detalle. Cada amigurumi es único y perfecto para regalos o decoración que capture la esencia de tu creatividad.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 85</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <img src="nueva/lanaecomo.jpg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lana Económica</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Ideal para quienes quieren empezar a tejer sin gastar mucho. Ofrece buena textura y resistencia, perfecta para proyectos sencillos y creativos.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 20</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <img src="nueva/lanacolores.jpg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lanas de Colores</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Dale vida a tus proyectos con una amplia gama de colores vivos y combinables. Ideal para bufandas, gorros, mantas y más.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 30</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <img src="nueva/acri.jpg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lana Acrílica</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Fibra resistente, fácil de lavar y mantener. Ideal para prendas que se usan frecuentemente, combinando durabilidad con suavidad.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 25</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="col-12 col-md-6 col-lg-3 d-flex">
+                <div class="card shadow-lg flex-fill" style="background-color: #f7f7f7; transition: all 0.4s; cursor: pointer;">
+                    <img src="nueva/lanadealpaca.jpg" class="w-100 rounded-top" style="height: 230px; object-fit: cover;">
+                    <div class="card-body text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2" style="color:#000;">Lana de Alpaca</h5>
+                        <p class="small mb-2" style="color:#333;">
+                            Fibra premium, muy suave y cálida. Perfecta para prendas exclusivas y proyectos especiales que requieren un acabado de lujo.
+                        </p>
+                        <p class="fw-bold mb-3" style="color:#367997;">Bs 60</p>
+                        <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar ahora</a>
                     </div>
                 </div>
             </div>
 
         </div>
-        <BR><BR>
-          <div class="row">
 
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="nueva/lanaecomo.jpg">
-                    <div class="card-body">
-                        <h5> Lana Economica</h5>        
-                        <p>lana simple buena calidad a bajo precio</p>
-                        <p class="fw-bold">Desde Bs 20</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="nueva/lanacolores.jpg">
-                    <div class="card-body">
-                        <h5>Lana de Colores</h5>
-                        <p>Ovillos de muchos colores variedad para proyectos creativos</p>
-                        <p class="fw-bold">Desde Bs 30</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="nueva/acri.jpg">
-                    <div class="card-body">
-                        <h5>   Lana Acrílica</h5>
-                        <p>Ovillos normales (colores variados) resistente y fácil de cuidar</p>
-                        <p class="fw-bold">Desde Bs 25</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="nueva/lanadealpaca.jpg">
-                    <div class="card-body">
-                        <h5>Lana de Alpaca</h5>
-                        <p>Lana suave tipo natural muy calida y de alta calidad</p>
-                        <p class="fw-bold">Desde Bs 60</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 </section>
-
 <!-- LOTES -->
 <section class="container my-5">
-    <div class="row text-center">
-        <h2 class="text-center mb-4">Lotes Especiales</h2>
-        <h4 class="text-center mb-5">Seleccionamos los mejores vellones para
-             ofrecerte lotes exclusivos con la más alta calidad y suavidad incomparable.</h4>
-             
-       <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/permiun.jpg" class="card-img-top" alt="Lote Premium">
-                <div class="card-body text-center">
-                    <h5>Lote Premium</h5>
-                    <p class="text-muted">Fibra ultrafina 18.5 micras</p>
-                    <p>Lana merino seleccionada a mano, suavidad excepcional ideal para prendas 
-                        de alta calidad.</p>
-                    <span class="badge bg-primary">Disponible</span>
+    <div class="row text-center mb-4">
+        <h2 class="fw-bold mb-3 display-5" style="color: #367997;"> Lotes Especiales </h2>
+        <p class="text-muted mb-3 fs-5">
+            Selecciones exclusivas para quienes buscan calidad superior y variedad en cada proyecto creativo.
+        </p>
+        <p class="text-muted fs-6">
+            Cada lote ha sido cuidadosamente armado para ofrecerte combinaciones de lanas, hilos y accesorios únicos. 
+            Crea prendas, accesorios y decoraciones que reflejen tu estilo y creatividad.
+        </p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/permiun.jpg" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Lote Premium</h5>
+                    <p class="small mb-3" style="color:#333;">
+                        Incluye lanas de alta calidad y accesorios finos. Ideal para prendas elegantes y proyectos que buscan un acabado profesional y duradero.
+                    </p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Ver más</a>
                 </div>
             </div>
         </div>
 
-           <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/arte.webp" class="card-img-top" alt="Lote Artesanal">
-                <div class="card-body text-center">
-                    <h5>Lote Artesanal</h5>
-                    <p class="text-muted">Mezcla de fibras naturales</p>
-                    <p>Combinación única de lana de oveja y alpaca,
-                         ideal para proyectos con textura y calidez.</p>
-                           <span class="badge bg-primary">En oferta</span>
-                  
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/arte.webp" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Lote Artesanal</h5>
+                    <p class="small mb-3" style="color:#333;">
+                        Mezcla de texturas y colores para proyectos creativos y personalizados. Perfecto para quienes buscan dar un toque único y artístico a sus creaciones.
+                    </p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Ver más</a>
                 </div>
             </div>
         </div>
 
-           <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/eco.jpg" class="card-img-top" alt="Lote Ecológico">
-                <div class="card-body text-center">
-                    <h5>Lote Ecologico</h5>
-                    <p class="text-muted">Tintes naturales</p>
-                    <p>Teñido con plantas y flores, respetuoso con el medio
-                         ambiente. Colores únicos y vibrantes.</p>
-                                  <span class="badge bg-primary">Edición limitada</span>
-                
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/eco.jpg" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Lote Ecológico</h5>
+                    <p class="small mb-3" style="color:#333;">
+                        Lanas y materiales amigables con el medio ambiente. Ideal para quienes buscan crear proyectos sostenibles, naturales y llenos de estilo.
+                    </p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Ver más</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <!-- KITS -->
 <section class="container my-5">
-    <div class="row text-center">
-        <h2>Kits de Tejido</h2>
-        <h4 class="text-center mb-5">Todo lo que necesitas para empezar tu próximo proyecto. Incluye lana, agujas y patrón descargable.</h4>
+    <div class="row text-center mb-4">
+        <h2 class="fw-bold mb-3 display-5" style="color: #367997;"> Kits de Tejido </h2>
+        <p class="text-muted mb-3 fs-5">
+            Todo lo que necesitas para empezar fácilmente, desde principiantes hasta expertos que buscan perfección en cada puntada.
+        </p>
+        <p class="text-muted fs-6">
+            Cada kit incluye materiales de calidad, guías paso a paso, ideas de combinación de colores y consejos prácticos para que tus proyectos queden espectaculares.
+        </p>
+    </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/bufanda.webp">
-                <div class="card-body">
-                    <h5>Kit Bufanda</h5>
-                    <p>2 ovillos de lana gruesa + agujas N°8 + patrón paso a paso. Ideal para principiantes.</p>
-
-                    <p class="fw-bold">Bs 90</p>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/bufanda.webp" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Kit Bufanda</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Incluye todo lo necesario para tejer bufandas únicas y cómodas. Perfecto para practicar nuevas técnicas y estilos.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Bs 90</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/gorro.jpg">
-                <div class="card-body">
-                    <h5>Kit Gorro</h5>
-                    <p>2 ovillos de lana fina + agujas circulares + patrón de trenzas.</p>
-
-                    <p class="fw-bold">Bs 70</p>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/gorro.jpg" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Kit Gorro</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Ideal para proyectos rápidos, con combinaciones de colores divertidas y técnicas fáciles de aprender.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Bs 70</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/mantabab.webp">
-                <div class="card-body">
-                    <h5>Kit Manta</h5>
-                    <p>4 ovillos de lana hipoalergénica + patrón de punto bobo + tutorial en video.</p>
-
-                    <p class="fw-bold">Bs 170</p>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/mantabab.webp" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">Kit Manta</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Para proyectos grandes y cálidos, incluye todos los hilos y herramientas necesarios para crear mantas, cojines o cardigans.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Bs 170</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- 🔹 NUEVA SECCIÓN: LANAS POR PESO -->
+
+<!-- LANAS POR PESO -->
 <section class="container my-5">
-    <div class="row text-center">
-        <h2 class="text-center mb-4">Lanas por Peso </h2>
-        <h4 class="text-center mb-5">Encuentra la lana perfecta según tu proyecto. Disponible en diferentes gramajes y colores.</h4>
+    <div class="row text-center mb-4">
+        <h2 class="fw-bold mb-3 display-5" style="color: #367997;"> Lanas por Peso </h2>
+        <p class="text-muted mb-3 fs-5">
+            Elige la cantidad perfecta según tu proyecto. Desde detalles pequeños hasta grandes creaciones que sorprenderán.
+        </p>
+        <p class="text-muted fs-6">
+            Calidad garantizada en cada hebra y variedad de texturas y colores para que tu imaginación no tenga límites.
+        </p>
+    </div>
 
-       <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/lanaami.jpg" class="card-img-top" alt="50 gramos">
-                <div class="card-body">
-                    <h5>50 gr</h5>
-                    <p>Ideal para detalles, amigurumis y proyectos pequeños</p>
-                    <p class="fw-bold">Desde Bs 45</p>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/lanaami.jpg" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">50 gramos</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Perfecto para amigurumis, detalles decorativos y proyectos rápidos. Ideal para experimentar con colores y texturas.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Desde Bs 45</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
 
-
-   <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/cha.webp" class="card-img-top" alt="250 gramos">
-                <div class="card-body">
-                    <h5>250 gr</h5>
-                    <p>Ideal para chalecos, mantas pequeñas y suéteres</p>
-                    <p class="fw-bold">Desde Bs 75</p>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/cha.webp" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">250 gramos</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Ideal para bufandas, suéteres y chalecos con texturas acogedoras y diseños llamativos.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Desde Bs 75</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
 
-    <div class="col-md-4">
-            <div class="card">
-                <img src="nueva/mantas.jpg" class="card-img-top" alt="500 gramos">
-                <div class="card-body">
-                    <h5>500 gr</h5>
-                    <p>Para proyectos grandes como mantas, cardigans y más</p>
-                    <p class="fw-bold">Desde Bs 89</p>
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card shadow-lg flex-fill" style="background-color:#f7f7f7;">
+                <img src="nueva/mantas.jpg" class="w-100 rounded-top" style="height:230px; object-fit:cover;">
+                <div class="card-body text-center d-flex flex-column">
+                    <h5 class="fw-bold mb-2" style="color:#000;">500 gramos</h5>
+                    <p class="small mb-2" style="color:#333;">
+                        Para proyectos grandes como mantas, cardigans y tejidos completos, garantizando suavidad, resistencia y un acabado profesional.
+                    </p>
+                    <p class="fw-bold mb-3" style="color:#367997;">Desde Bs 89</p>
+                    <a href="contacto.html" class="btn mt-auto" style="background-color:#367997; color:#fff; border-radius:8px;">Comprar</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- ICONOS -->
-<section class="section-icons">
+<!-- ICONOS MEJORADOS -->
+<section class="section-icons bg-light py-5">
     <div class="container">
-        <div class="row text-center">
+        <div class="row text-center g-4">
 
             <div class="col-md-4">
-                <i class="bi bi-airplane"></i>
-                <h4>Envio gratis</h4>
-                <p>Primera compra</p>
+                <i class="bi bi-airplane" style="font-size: 3rem; color: #367997;"></i>
+                <h4 class="fw-bold mt-2" style="color: #367997;">Envío Gratis</h4>
+                <p class="text-muted">
+                    Disfruta de envío gratuito en tu primera compra y recibe tus productos de manera rápida y segura.
+                </p>
             </div>
 
             <div class="col-md-4">
-                <i class="bi bi-cash-coin"></i>
-                <h4>Reembolso</h4>
-                <p>Garantia</p>
+                <i class="bi bi-cash-coin" style="font-size: 3rem; color: #367997;"></i>
+                <h4 class="fw-bold mt-2" style="color: #367997;">Garantía de Compra</h4>
+                <p class="text-muted">
+                    Compra con confianza: si no estás satisfecho, te ofrecemos soluciones rápidas y efectivas.
+                </p>
             </div>
 
             <div class="col-md-4">
-                <i class="bi bi-gift-fill"></i>
-                <h4>Regalos</h4>
-                <p>Clientes frecuentes</p>
+                <i class="bi bi-gift-fill" style="font-size: 3rem; color: #367997;"></i>
+                <h4 class="fw-bold mt-2" style="color: #367997;">Beneficios Exclusivos</h4>
+                <p class="text-muted">
+                    Accede a promociones, regalos especiales y descuentos únicos por ser parte de nuestra comunidad creativa.
+                </p>
             </div>
 
         </div>
     </div>
 </section>
-
-<!-- FOOTER ORIGINAL -->
-<footer class="footer">
+<!-- FOOTER MEJORADO CON LETRAS BLANCAS -->
+<footer class="footer py-5" style="background-color:#367997;">
     <div class="container">
         <div class="row">
 
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h3>Punto y Afecto</h3>
-                <p>Transformamos la lana en arte. Diseños unicos, calidad garantizada y pasion en cada detalle.</p>
+                <h3 style="color:#fff;">Punto y Afecto</h3>
+                <p style="color:#fff;">
+                    Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.
+                    Cada puntada cuenta para crear piezas que enamoran.
+                </p>
             </div>
 
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h5>Servicios</h5>
-                <ul>
+                <h5 style="color:#fff;">Servicios</h5>
+                <ul class="list-unstyled" style="color:#fff;">
                     <li>Venta de lanas</li>
                     <li>Tejidos personalizados</li>
-                    <li>Artesanias</li>
-                    <li>Envios a todo el pais</li>
+                    <li>Artesanías</li>
+                    <li>Envíos a todo el país</li>
                 </ul>
             </div>
 
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h5>Contactanos</h5>
-                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
-                <p><i class="bi bi-facebook"></i> Facebook</p>
-                <p><i class="bi bi-instagram"></i> Instagram</p>
-                <p><i class="bi bi-tiktok"></i> TikTok</p>
+                <h5 style="color:#fff;">Contáctanos</h5>
+                <p>
+                    <a href="https://wa.me/591XXXXXXXX" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/tu_usuario" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.tiktok.com/@tu_usuario" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-tiktok"></i> TikTok
+                    </a>
+                </p>
             </div>
 
         </div>
 
-        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+        <hr style="border-color: rgba(255, 255, 255, 0.4);">
 
-        <p class="text-center mb-0"> 2026 Punto y Afecto. Todos los derechos reservados.</p>
+        <p class="text-center mb-0" style="color:#fff;">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
     </div>
 </footer>
 
 <script src="js/bootstrap.min.js"></script>
-
 </body>
 </html>

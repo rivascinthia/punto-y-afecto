@@ -16,28 +16,76 @@
 }
 
 /* =======================
-   NAVBAR
+   NAVBAR AZUL PRO
 ======================= */
+
+/* FONDO AZUL SÓLIDO */
 .navbar.bg-gradient {
-    background: linear-gradient(90deg, #f8f9fa, #e9ecef);
+        background: linear-gradient(135deg, #367997, #367997) !important;
 }
 
+/* EVITA TRANSPARENCIAS */
+.navbar {
+    opacity: 1 !important;
+}
+
+/* LINKS */
 .navbar .nav-link {
-    transition: all 0.3s ease;
+    color: white !important;
+    transition: 0.3s;
+    font-weight: 500;
 }
 
 .navbar .nav-link:hover {
-    color: #0d6efd;
-    text-decoration: underline;
+     color:#367997 !important;
 }
 
-.navbar .btn-primary {
-    transition: all 0.3s ease;
+/* BOTÓN CONTACTO */
+.navbar .btn-light {
+     background:#367997;
+       color:#ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.navbar .btn-primary:hover {
-    background-color: #0b5ed7;
-    transform: translateY(-2px);
+.navbar .btn-light:hover {
+    background:#367997;
+}
+
+/* HAMBURGUESA */
+.navbar-toggler {
+    background-color:#367997;
+
+    border: none;
+    padding: 6px 10px;
+}
+
+/* ICONO BLANCO */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* 📱 MENÚ DESPLEGABLE EN CELULAR */
+@media (max-width: 991px) {
+
+    .navbar-collapse {
+       background:#367997;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-link {
+        color: white !important;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar .nav-link:hover {
+        background: rgba(255,255,255,0.2);
+        border-radius: 8px;
+    }
 }
 /* HERO BLOG */
 .hero-blog {

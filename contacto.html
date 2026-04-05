@@ -12,18 +12,15 @@
 <!-- NAVBAR  -->
 <nav class="navbar navbar-expand-lg navbar-light bg-gradient shadow-sm fixed-top">
     <div class="container">
-        <!-- Logo -->
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img src="indexima/logo.jpg" alt="Logo" width="40" class="me-2 rounded-circle shadow-sm">
-            <span class="fw-bold text-primary">Punto y</span> Afecto
+            <span class="fw-bold text-white">Punto y</span> <span class="text-white">Afecto</span>
         </a>
 
-        <!-- Botón hamburguesa -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menú de navegación -->
         <div class="collapse navbar-collapse" id="navbar-start">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -32,21 +29,25 @@
                 <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
             </ul>
-            <!-- Botón CTA -->
-            <a href="contacto.html" class="btn btn-primary ms-lg-3">Contactame</a>
+
+            <a href="contacto.html" class="btn btn-light ms-lg-3 fw-bold">Contáctame</a>
         </div>
     </div>
 </nav>
 
-
 <!-- HERO -->
 <div class="hero">
     <div class="contenido-hero">
-        <br>   <br>   <br><br><br>
+        <br><br><br><br><br>
         <h3>La mejor</h3>
-        <h5>Comunicacion</h5>
-        <a href="#contacto" class="btn btn-primary">Contactame</a>
+        <h5>Comunicación</h5>
+
+        <!-- BOTÓN -->
+        <a href="#contacto" class="btn-ver">Contáctame</a>
     </div>
+</div>
+
+
 
        <!-- ONDA SVG igual que "¿Quién soy?" -->
     <div class="wave"> <!-- Cambié la clase a wave igual que "¿Quién soy?" -->
@@ -60,21 +61,94 @@
 
 <section class="contacto-contenedor">
   <div class="container">
-    <h2 class="text-center mb-5">Contactanos</h2>
-    <div class="row align-items-start">
 
-      <!-- FORMULARIO -->
-      <div class="col-lg-6 mb-4">
-        <div class="contacto-card">
-          <h3>Envíanos un mensaje</h3>
-          <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu email" required>
-            <textarea placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
+    <!-- TÍTULO -->
+    <h2 class="text-center fw-bold mb-3 display-5">
+      Contáctanos
+    </h2>
+
+    <!-- TEXTO -->
+    <p class="text-center text-muted mb-5 fs-5">
+      ¿Tienes alguna duda o deseas más información sobre nuestros productos?   
+      Estamos aquí para ayudarte. Escríbenos y te responderemos lo más pronto posible.
+    </p>
+
+    <!-- FILA -->
+    <div class="row align-items-stretch g-4">
+<!-- FORMULARIO -->
+<div class="col-lg-6 mb-4">
+  <div class="contacto-card shadow-lg p-4 rounded-4">
+
+  
+
+    <form class="needs-validation" novalidate>
+
+      <!-- NOMBRE Y APELLIDO -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+            <label>Nombre</label>
+          </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+            <label> Apellido</label>
+          </div>
         </div>
       </div>
+
+      <!-- EMAIL -->
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email" required>
+        <label> Correo electrónico</label>
+      </div>
+
+      <!-- TELÉFONO -->
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+        <label>Teléfono (opcional)</label>
+      </div>
+
+      <!-- TIPO DE CONSULTA -->
+      <div class="mb-3">
+        <label class="form-label"> Tipo de consulta</label>
+        <select class="form-select" required>
+          <option selected disabled value="">Selecciona una opción</option>
+          <option>Compra de productos</option>
+          <option>Información</option>
+          <option>Soporte</option>
+          <option>Otro</option>
+        </select>
+      </div>
+
+      <!-- MENSAJE -->
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 120px" required></textarea>
+        <label>Escribe tu mensaje</label>
+      </div>
+
+      <!-- CHECKBOX -->
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" required>
+        <label class="form-check-label">
+          Acepto los términos y condiciones
+        </label>
+      </div>
+
+      <!-- BOTÓN -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+           Enviar mensaje
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
 
       <!-- MAPA -->
       <div class="col-lg-6 mb-4">
@@ -100,39 +174,45 @@
 
 <div class="col-sm-12 col-md-6 col-lg-4">
 <img src="indexima/blog1.jpg" class="img-fluid">
-
+<br><br>
 </div>
 
 <div class="col-sm-12 col-md-6 col-lg-4">
 <img src="indexima/1.jpeg" class="img-fluid">
-
+<br><br>
 </div>
 
 <div class="col-sm-12 col-md-6 col-lg-4">
 <img src="indexima/2.jpg" class="img-fluid">
-
+<br><br>
 </div>
 
 
 
 </div>
 </div>
+ <div class="content">
+
+    
+    </div>
 </section>
-<!-- FOOTER PROFESIONAL -->
-<footer class="footer">
+
+<!-- FOOTER MEJORADO CON LETRAS BLANCAS -->
+<footer class="footer py-5" style="background-color:#367997;">
     <div class="container">
         <div class="row">
 
-            <!-- Logo + descripción -->
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h3>Punto y Afecto</h3>
-                <p>Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.</p>
+                <h3 style="color:#fff;">Punto y Afecto</h3>
+                <p style="color:#fff;">
+                    Transformamos la lana en arte. Diseños únicos, calidad garantizada y pasión en cada detalle.
+                    Cada puntada cuenta para crear piezas que enamoran.
+                </p>
             </div>
 
-            <!-- Servicios -->
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h5>Servicios</h5>
-                <ul>
+                <h5 style="color:#fff;">Servicios</h5>
+                <ul class="list-unstyled" style="color:#fff;">
                     <li>Venta de lanas</li>
                     <li>Tejidos personalizados</li>
                     <li>Artesanías</li>
@@ -140,28 +220,38 @@
                 </ul>
             </div>
 
-            <!-- Redes sociales -->
             <div class="col-md-4 mb-4 text-center text-md-start">
-                <h5>Contáctanos</h5>
-                <p><i class="bi bi-whatsapp"></i> WhatsApp</p>
-                <p><i class="bi bi-facebook"></i> Facebook</p>
-                <p><i class="bi bi-instagram"></i> Instagram</p>
-                <p><i class="bi bi-tiktok"></i> TikTok</p>
+                <h5 style="color:#fff;">Contáctanos</h5>
+                <p>
+                    <a href="https://wa.me/591XXXXXXXX" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.instagram.com/tu_usuario" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.tiktok.com/@tu_usuario" target="_blank" style="color:#fff; text-decoration:none;">
+                        <i class="bi bi-tiktok"></i> TikTok
+                    </a>
+                </p>
             </div>
 
         </div>
 
-        <!-- Línea divisoria -->
-        <hr style="border-color: rgba(0, 0, 0, 0.4);">
+        <hr style="border-color: rgba(255, 255, 255, 0.4);">
 
-        <!-- Derechos -->
-        <p class="text-center mb-0">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
+        <p class="text-center mb-0" style="color:#fff;">© 2026 Punto y Afecto. Todos los derechos reservados.</p>
     </div>
 </footer>
 
-    <!-- Scripts -->
-          <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
