@@ -111,27 +111,34 @@ html {
 }
 
 /* =======================
-   BOTÓN VER MÁS 🔥
+   BOTÓN VER PRODUCTOS
 ======================= */
 .btn-ver {
     display: inline-block;
-    background: #367997;
+    background: #367997; /* azul principal */
     color: white;
     padding: 12px 28px;
-    border-radius: 60px;
+    border-radius: 30px; /* redondeado */
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    animation: pulse 2s infinite;
 }
 
+/* HOVER (cuando pasas el mouse) */
 .btn-ver:hover {
+  background: #367997; /* azul principal */
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* ANIMACIÓN SUAVE (llamativo) */
+.btn-ver {
+    animation: pulse 2s infinite;
+}
+
+/* EFECTO "RESPIRAR" */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -179,10 +186,17 @@ html {
     background: linear-gradient(135deg, #367997, #336679);
     color: white;
     padding: 60px 0;
+    font-size: 14px;
 }
 
-.footer h3, .footer h5 {
+.footer h3,
+.footer h5 {
     margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 10px;
 }
 
 .footer ul {
@@ -190,10 +204,26 @@ html {
     padding: 0;
 }
 
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: white;
+}
+
+.footer hr {
+    margin: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.4);
+}
+
 /* =======================
    RESPONSIVE
 ======================= */
 @media (max-width: 768px) {
+
     .hero-video {
         height: 60vh;
     }
@@ -206,19 +236,28 @@ html {
         font-size: clamp(12px, 4vw, 16px);
     }
 
+    
+}
+
+@media (max-width: 576px) {
+
+    .hero-video {
+        height: 50vh;
+    }
+
+    .card img {
+        height: 180px;  /* más pequeñas en móvil */
+    }
+
+    .content h1 {
+        font-size: clamp(20px, 8vw, 28px);
+    }
+
+    .content p {
+        font-size: clamp(10px, 4vw, 14px);
+    }
+
     .wave svg {
-        height: 200px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-    .footer .col-md-4 {
-        margin-bottom: 20px;
-    }
-
-    .navbar a {
-        font-size: 16px;
+        height: 120px;
     }
 }

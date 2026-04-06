@@ -158,7 +158,8 @@
 
 /* HOVER (cuando pasas el mouse) */
 .btn-ver:hover {
-    background: #367997;/* azul más oscuro */
+    background: #367997; /* azul principal */
+  
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -174,6 +175,7 @@
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
+
 /* =======================
    ONDA SVG
 ======================= */
@@ -246,18 +248,7 @@
     font-size: 0.9rem;
 }
 
-/* =======================
-   BOTONES
-======================= */
-.btn-primary {
-    border-radius: 8px;
-    transition: 0.3s;
-}
 
-.btn-primary:hover {
-    background-color: #0d6efd;
-    transform: scale(1.05);
-}
 
 /* =======================
    BADGES (nuevo / popular)

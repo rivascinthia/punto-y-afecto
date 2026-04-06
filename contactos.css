@@ -45,27 +45,34 @@
 }
 
 /* =======================
-   BOTÓN
+   BOTÓN VER PRODUCTOS
 ======================= */
 .btn-ver {
     display: inline-block;
-    background: #367997;
+    background: #367997; /* azul principal */
     color: white;
     padding: 12px 28px;
-    border-radius: 30px;
+    border-radius: 30px; /* redondeado */
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* HOVER (cuando pasas el mouse) */
+.btn-ver:hover {
+  background: #367997; /* azul principal */
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* ANIMACIÓN SUAVE (llamativo) */
+.btn-ver {
     animation: pulse 2s infinite;
 }
 
-.btn-ver:hover {
-    background: #24576e;
-    transform: scale(1.1);
-}
-
+/* EFECTO "RESPIRAR" */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -120,7 +127,7 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
+    color: #ffffff;
 }
 
 /* =======================
@@ -181,29 +188,7 @@
     }
 }
 
-/* =======================
-   ONDA
-======================= */
-.wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    line-height: 0;
-    z-index: 1;
-}
 
-.wave svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.wave path {
-    fill: rgba(120, 157, 187, 0.7);
-}
 
 /* =======================
    CONTACTO

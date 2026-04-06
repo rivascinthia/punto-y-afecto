@@ -34,13 +34,7 @@
     color: #cce6f5 !important;
 }
 
-/* BOTÓN NAV */
-.navbar .btn-light {
-    background: #367997;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: bold;
-}
+
 
 /* HAMBURGUESA */
 .navbar-toggler {
@@ -72,6 +66,42 @@
         border-radius: 8px;
     }
 }
+/* =======================
+   BOTÓN VER PRODUCTOS
+======================= */
+.btn-ver {
+    display: inline-block;
+    background: #367997; /* azul principal */
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px; /* redondeado */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* HOVER (cuando pasas el mouse) */
+.btn-ver:hover {
+   background: #53849b; /* azul principal */
+  
+    transform: scale(1.1);
+   
+}
+
+/* ANIMACIÓN SUAVE (llamativo) */
+.btn-ver {
+    animation: pulse 2s infinite;
+}
+
+/* EFECTO "RESPIRAR" */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 
 /* =======================
    BODY
@@ -155,32 +185,7 @@ body {
     fill: rgba(120, 157, 187, 0.7);
 }
 
-/* =======================
-   BOTÓN
-======================= */
-.btn-ver {
-    display: inline-block;
-    background: #367997;
-    color: white;
-    padding: 12px 28px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    animation: pulse 2s infinite;
-}
 
-.btn-ver:hover {
-    background: #24576e;
-    transform: scale(1.1);
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
 
 /* =======================
    GALERÍA PRO
